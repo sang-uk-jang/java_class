@@ -37,7 +37,7 @@
 +---week01
 |   |   TestMain.java
 |   |   
-|   \---sanguk
+|   +---sanguk
 |           Errors.java
 |           TestMain.java
 |           
@@ -47,6 +47,12 @@
     |       
     +---lab
             TestMain.java       
+```
+---
+## How to make Data Structure
+```
+# 터미널에서 src 폴더에서 폴더 구조 쉽게 뽑기
+tree /f /a | clip
 ```
 
 ---
@@ -80,6 +86,8 @@ git push -u origin master
 git push
 ```
 ---
+
+
 ## 📝 License
 
 This repository is for educational and study purposes.
