@@ -78,7 +78,7 @@ java -cp src Main
 
 ---
 
-## how to push to github
+## how to push to GitHub
 ```bash
 # 1. 변경된 모든 파일 스테이지 영역에 추가
 git add .
@@ -86,7 +86,7 @@ git add .
 # 2. 커밋 생성
 git commit -m "변경된 사항"
 
-# 3-1. 원격에 처음 psuh 하기
+# 3-1. 원격에 처음 push 하기
 git push -u origin master
 
 # 3-2. -u로 하고 그뒤로 같은 브랜치에 push 하기
