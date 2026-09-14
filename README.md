@@ -53,7 +53,7 @@
         |         TestMain.java
         |
         +---Lab
-                   lab01
+                   lab01.java
 ```
 ---
 ## How to make Data Structure
