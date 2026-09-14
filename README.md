@@ -42,11 +42,18 @@
 |           TestMain.java
 |           
 +---week02
-    +---example01
-    |       TestMain.java
-    |       
-    +---lab
-            TestMain.java       
+|   +---example01
+|   |       TestMain.java
+|   |       
+|   +---lab
+|           TestMain.java  
++---week03
+    +---sanguk
+        +---example
+        |         TestMain.java
+        |
+        +---Lab
+                   lab01
 ```
 ---
 ## How to make Data Structure
