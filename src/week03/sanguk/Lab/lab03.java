@@ -56,7 +56,6 @@ public class lab03 {
     }
     static void main() {
         int[] arr = createArr();
-        int deChNum =0;
         while(true){
             if(deplicationCheck(arr)==true){
                 break;
