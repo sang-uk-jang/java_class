@@ -32,12 +32,16 @@
 
 
 ```text
-|---Main.java
++---res
+|       scores.txt
+|       
+\---src
+|   Main.java
 |   
 +---week01
 |   |   TestMain.java
 |   |   
-|   +---sanguk
+|   \---sanguk
 |           Errors.java
 |           TestMain.java
 |           
@@ -45,16 +49,42 @@
 |   +---example01
 |   |       TestMain.java
 |   |       
-|   +---lab
-|           TestMain.java  
+|   \---lab
+|           TestMain.java
+|           
 +---week03
-    +---sanguk
-        +---example
-        |         TestMain.java
-        |
-        +---Lab
-                   lab01.java
+|   \---sanguk
+|       +---example
+|       |       TestMain.java
+|       |       TestMain02.java
+|       |       
+|       \---Lab
+|               lab01.java
+|               lab02.java
+|               lab03.java
+|               
++---week04
+|   \---sanguk
+|       \---example
+|               example01.java
+|               TestMain.java
+|               TV.java
+|               
+\---week05
+    \---sanguk
+        \---example
+                BankAccount.java
+                BankAccount2.java
+                TestMain.java
+                TV.java
+                Vehicle.java
 ```
+
+
+             
+
+
+
 ---
 ## How to make Data Structure
 ```
