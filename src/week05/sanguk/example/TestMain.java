@@ -61,9 +61,21 @@ public class TestMain {
     }
 
     static void main() {
+        BankManager manager = new BankManager("건국은행", 10);
+        manager.createAccount();
+        manager.createAccount();
+//        manager.deposit();
+//        manager.deposit();
+//        manager.withdraw();
+//        manager.withdraw();
+        manager.transfer();
+        System.out.println(manager);
+
+//        BankAccount2 acc1 = new BankAccount2("홍길동", 1000);
+//        System.out.println(acc1);
 //        example01();
         //example02();
-        example03();
+        //example03();
 //        TV tv = new TV(false, 10);
 //        System.out.println("202211359 장상욱");
 //        tv.powerOnOff();

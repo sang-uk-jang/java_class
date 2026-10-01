@@ -5,6 +5,7 @@ public class BankAccount2 {
     public int accountNumber;
     public String customerName;
     public double accountBalance;
+
     {
         this.accountNumber=count++;
     }
@@ -16,7 +17,7 @@ public class BankAccount2 {
     public BankAccount2(String customerName, double accountBalance) {
         this.customerName = customerName;
         this.accountBalance = accountBalance;
-        System.out.println("생성자 : "+this); //클래스 내부에서의 객체 주소값 => this
+        //System.out.println("생성자 : "+this); //클래스 내부에서의 객체 주소값 => this
     }
 
     public void deposit(double amount){
@@ -43,5 +44,16 @@ public class BankAccount2 {
         System.out.println("계좌번호 : "+ this.accountNumber);
         System.out.println("잔   액 : "+this.accountBalance);
         System.out.println("-".repeat(20));
+    }
+
+    @Override
+    public String toString() {
+        String str = "-".repeat(20)+"\n";
+        str+= "고객이름 : "+this.customerName+"\n";
+        str+= "계좌번호 : "+ this.accountNumber+"\n";
+        str+= "잔   액 : "+this.accountBalance+"\n";
+        str+= "-".repeat(20)+"\n";
+        return str;
+        //return super.toString();
     }
 }
