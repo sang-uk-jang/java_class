@@ -13,7 +13,7 @@ public class lab03 {
     static Boolean deplicationCheck(int[] arr){
         int[] checkArr = new int[45];
         for(int i=0;i<arr.length;i++){
-            if(checkArr[arr[i]-1]==0){
+            if(checkArr[arr[i]-1]==0){//1부터 45까지라서 1을 빼줘서 0부터 44까지로 인덱스를 맞춘다.
                 checkArr[arr[i]-1]=1;
             }
             else {

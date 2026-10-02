@@ -11,12 +11,13 @@ public class TestMain {
         System.out.print("학번 : ");
         String sid = scanner.next();
         System.out.print("이름 : ");
-        scanner.nextLine();//줄바꿈 찾아서 초기화
+        scanner.nextLine();//줄바꿈 찾아서 초기화 =>
+        // 위의 학번에 들어가는 줄바꿈이 입력 버퍼에 들어가 있어서
         String name = scanner.nextLine();
         System.out.print("나이 : ");
         int sold = scanner.nextInt();
         System.out.print("주소 : ");
-        scanner.nextLine();
+        scanner.nextLine();//여기서도 위에 입력버퍼에 줄바꿈이 들어 있어서 없애준다.
         String saddress = scanner.nextLine();
 
         System.out.println("학번 : "+sid);
