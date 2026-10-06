@@ -157,9 +157,7 @@ public class ParkingArea {
                     //그래서 문자열 비교를 하려면 equal를 써야함
                     find=1;
                     parkArea[i][j]=null;
-                    System.out.println(queue);
                     queue.add(new AbstractCar(i, j));
-                    System.out.println(queue);
                     System.out.println(outCarNumber + " 차량이 출차하였습니다");
                 }
             }

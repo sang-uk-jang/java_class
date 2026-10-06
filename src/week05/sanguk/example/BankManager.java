@@ -3,11 +3,11 @@ package week05.sanguk.example;
 import java.util.Scanner;
 
 public class BankManager {
-    public String branchName;
-    public final int SIZE;
-    public BankAccount2[] bankAccount = null;//아직 배열 생성 안했다. 생성하고 안에 객체도 넣어줘야 한다.
-    public int count = 0;//개설된 계좌의 수
-    public static Scanner scan = new Scanner(System.in);
+    private String branchName;
+    private final int SIZE;
+    private BankAccount2[] bankAccount = null;//아직 배열 생성 안했다. 생성하고 안에 객체도 넣어줘야 한다.
+    private int count = 0;//개설된 계좌의 수
+    private static Scanner scan = new Scanner(System.in);
 
     public BankManager(String branchName, int SIZE) {
         this.branchName = branchName;
@@ -18,6 +18,7 @@ public class BankManager {
             System.out.println("계좌 개설 불가");
         }
     }
+
     public void createAccount(){
         System.out.println("----------계좌 개설----------");
         if(this.count < this.SIZE){
@@ -25,7 +26,7 @@ public class BankManager {
             String name = scan.next();
             System.out.print("임금 금액 : ");
             double amount = scan.nextDouble();
-            bankAccount[count++] = new BankAccount2(name, amount);
+            bankAccount[count++] = BankAccount2.getInstance(name, amount);
         }else{
             System.out.println("계좌 개설 불가");
         }
@@ -64,7 +65,7 @@ public class BankManager {
         if(this.count>0){
             for(BankAccount2 acc : bankAccount){
                 if(acc != null){//객체가 null인지 아닌지 체크를 해줘야 한다.
-                    if(acc.accountNumber == target){
+                    if(acc.getAccountNumber() == target){
                         return acc;
                     }
                 }else

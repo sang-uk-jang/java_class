@@ -1,23 +1,43 @@
 package week05.sanguk.example;
 
 public class BankAccount2 {
-    public static int count=100;
-    public int accountNumber;
-    public String customerName;
-    public double accountBalance;
+    private static int count=100;
+    private int accountNumber;
+    private String customerName;
+    private double accountBalance;
 
     {
         this.accountNumber=count++;
     }
 
-    public BankAccount2(String customerName) {
+    private BankAccount2(String customerName) {
         this(customerName, 0.0);
     }
 
-    public BankAccount2(String customerName, double accountBalance) {
+    private BankAccount2(String customerName, double accountBalance) {
         this.customerName = customerName;
         this.accountBalance = accountBalance;
         //System.out.println("생성자 : "+this); //클래스 내부에서의 객체 주소값 => this
+    }
+
+    public static BankAccount2 getInstance(String customerName, double accountBalance){
+        return new BankAccount2(customerName, accountBalance);
+    } //객체 생성과정을 클래스가 통제할 수 있다는 점이 public 생성자와 가장 큰 차이이다.
+
+    public static BankAccount2 getInstance(String customerName){
+        return new BankAccount2(customerName, 0.0);
+    }
+
+    public int getAccountNumber() {
+        return accountNumber;
+    }
+
+    public double getAccountBalance() {
+        return accountBalance;
+    }
+
+    public static int getCount() {
+        return count;
     }
 
     public void deposit(double amount){

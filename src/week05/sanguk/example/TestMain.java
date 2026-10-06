@@ -43,21 +43,21 @@ public class TestMain {
 
     }
     static void example03(){
-        BankAccount2 acc1 = new BankAccount2("홍길동", 1000);
+        BankAccount2 acc1 = BankAccount2.getInstance("홍길동", 1000);
         System.out.println("main : "+acc1);
         acc1.deposit(100);
         acc1.withdraw(200);
         acc1.withdraw(2000);
         acc1.showAccount();
 
-        BankAccount2 acc2 = new BankAccount2("이길동");
+        BankAccount2 acc2 = BankAccount2.getInstance("이길동");
         acc1.transfer(acc2, 1000);
         acc1.transfer(acc2, 500);
         acc2.showAccount();
         acc1.showAccount();
-        System.out.println("acc1 : "+acc1.count);
-        System.out.println("acc2 : "+acc2.count);
-        System.out.println("Static : "+BankAccount2.count);//static 멤버라서 공유를 하고 있다.
+        System.out.println("acc1 : "+ BankAccount2.getCount());
+        System.out.println("acc2 : "+BankAccount2.getCount());
+        System.out.println("Static : "+BankAccount2.getCount());//static 멤버라서 공유를 하고 있다.
     }
 
     static void main() {
