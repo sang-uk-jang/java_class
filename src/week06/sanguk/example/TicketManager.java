@@ -47,7 +47,7 @@ public class TicketManager {
     public void showAdvanceTicket(int advanceDays){
         for(Ticket ticket:tickets){
             if(ticket != null && ticket instanceof AdvanceTicket t){
-                if(t.getAdvanceDays()<advanceDays){
+                if(t.getAdvanceDays()>advanceDays){
                     System.out.println(t);
                 }
             }
