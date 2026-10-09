@@ -16,7 +16,7 @@
     - 여기서 java.base에 대해 알아보자 java.base는 모듈(패키지를 모은거) 내부에 java.lang, java.io, java.math 등등 이 있지만 컴파일러가 자동으로 java.lang(패키지 : 관련된 클래스를 모은거)만 import를 해준다
   - Scanner은 코드 가독성이나 편리성 때문에 사용을 한다
   - 주의할 점 : 입력 버퍼에 남아있는 엔터로 인한 문제는 nextLine()을 써서 해결을 한다.
-  - [주의할 점 참고자료 가기](../week02/example01/TestMain.java)
+  - 참고자료 : [week02/example01/TestMain.java](../week02/example01/TestMain.java)
   ![img_4.png](img_4.png)
   
 - 연산자
