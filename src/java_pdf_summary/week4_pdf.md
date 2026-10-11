@@ -36,7 +36,8 @@
     - 처음에 1로 순위를 주고 배열을 한번 훓으면서 자기보다 큰게 있으면 순위를 1더하기
     - 시간복잡도 O(n^2) : why? 배열의 원소 하나의 순위를 정하려면 배열을 한번 훓어야하기 때문 : 한번이 n, 근데 n개가 n번을 훓여야하니까
     - 다른 방법은 없을까? => sort하고 sort한 index를 주기 O(nlogn)이지만 공간복잡도가 n이 더 필요하다... trade off가 있다.
-  참고자료 : [week4_lab](../week04/sanguk/example/example01.java#L92)
+    - 참고자료 : [week4_lab](../week04/sanguk/example/example01.java#L92)
+  
 
 ### 객체지향 프로그래밍
 - 객체지향 프로그래밍의 특징
