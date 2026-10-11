@@ -49,4 +49,21 @@
     - 배열이나 나열의 원소를 순차 접근하는데 유용한 for문
     - for(변수 : 배열래퍼런스){..반복작업문..}
     - ```for(int k : n){sum+=k}```
+- 난수 생성
+  1. Math.random() 사용(0.0 - 1.0미만의 double 반환) 
+  ```
+  //0.0 이상 1.0 미만의 실수
+  double d = Math.random();
+  // 1 이상 45 이하의 정수
+  int n = (int)(Math.random() * 45) + 1;
+  ```
+  2. Random 클래스 사용
+  ```
+  import java.util.Random;
+  Random rand = new Random();
+  // 0 이상 45 미만이므로 +1
+  int n = rand.nextInt(45) + 1;
+  ```
+    
+참고자료 : [3주차 강의자료](../pdf_summary/3주차_강의자료.pdf)
 
